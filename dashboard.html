@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - EntreSkill Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">EntreSkill Hub</div>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="business-ideas.html">Business Ideas</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="training.html">Training</a>
+    <a href="mentors.html">Mentors</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Dashboard</h1>
+</header>
+
+<div class="dashboard-section">
+
+  <div class="profile-card">
+    <h2>Your Profile</h2>
+    <p><strong>Skills:</strong> <span id="userSkills"></span></p>
+    <p><strong>Skill Level:</strong> <span id="userLevel"></span></p>
+  </div>
+
+  <div>
+    <h2>Progress</h2>
+    <div class="progress-container">
+      <div class="progress-bar" id="dashboardProgress"></div>
+    </div>
+    <p id="progressText"></p>
+  </div>
+
+  <div>
+    <h2>Saved Ideas</h2>
+    <div class="ideas-grid" id="bookmarkedGrid"></div>
+  </div>
+
+   <!-- ✅ Dashboard Buttons -->
+  <div class="dashboard-buttons">
+    <button id="resumeTrainingBtn">Resume Training</button>
+    <button id="mentorBtn">Find Mentor</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

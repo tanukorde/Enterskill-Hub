@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<h1>Admin Panel</h1>
+
+<div class="admin-buttons">
+  <button onclick="showSection('users')">Users</button>
+  <button onclick="showSection('mentors')">Mentors</button>
+  <button onclick="showSection('stats')">Stats</button>
+</div>
+
+<!-- USERS -->
+<div id="users" class="admin-section">
+  <h2>Users</h2>
+  <select id="selectUser"></select>
+  <button onclick="showUserProgress()">View Progress</button>
+  <div id="userTrainingContent"></div>
+</div>
+
+<!-- MENTORS -->
+<div id="mentors" class="admin-section" style="display:none;">
+  <h2>Mentors</h2>
+
+  <input id="mentorName" placeholder="Name">
+  <input id="mentorSkill" placeholder="Skill">
+  <input id="mentorExp" placeholder="Experience">
+  <input id="mentorImage" placeholder="Image URL">
+
+  <button onclick="addMentor()">Add Mentor</button>
+
+  <div id="adminMentorList"></div>
+</div>
+
+<!-- STATS -->
+<div id="stats" class="admin-section" style="display:none;">
+  <h2>Platform Stats</h2>
+  <p id="totalUsers"></p>
+  <p id="totalMentors"></p>
+</div>
+
+<button onclick="logoutAdmin()">Logout</button>
+
+<script src="admin.js"></script>
+</body>
+</html>

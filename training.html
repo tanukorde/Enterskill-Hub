@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Training</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">EntreSkill Hub</div>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="business-ideas.html">Business Ideas</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="mentors.html">Mentors</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1>Training Resources</h1>
+  <p id="trainingTitle"></p>
+</header>
+
+<!-- BUTTONS -->
+<div class="training-buttons">
+  <button onclick="showSection('video')" class="main-btn">🎥 Video</button>
+  <button onclick="showSection('article')" class="main-btn">📄 Article</button>
+  <button onclick="showSection('checklist')" class="main-btn">✅ Checklist</button>
+</div>
+
+<!-- CONTENT -->
+<div id="contentArea"></div>
+
+<!-- MARK TRAINING COMPLETE BUTTON -->
+<div style="margin-top: 20px;">
+  <button id="completeTrainingBtn">Mark Training Complete ✅</button>
+</div>
+<button id="goDashboardBtn">⬅️ Back to Dashboard</button>
+
+<script src="script.js"></script>
+</body>
+</html>
